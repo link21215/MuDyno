@@ -1,0 +1,17 @@
+[project]
+name = "mudyno"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "bottleneck>=1.5.0",
+    "cupy-cuda12x>=13.4.1",
+    "cython>=3.1.2",
+    "jupyter>=1.1.1",
+    "matplotlib>=3.10.3",
+    "numba>=0.61.2",
+    "numpy>=2.2.6",
+    "pyside6>=6.9.1",
+    "scipy>=1.15.3",
+]
