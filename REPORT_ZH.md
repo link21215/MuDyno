@@ -13,4 +13,3 @@ matplotlib.use("Agg")
 ```
 
 在安裝 `matplotlib` 等必要套件後，執行此改寫版本可順利完成，僅因使用 `Agg` 後端而不顯示視窗，但程式能正常產生計算結果。
-執行完成後會在目錄產生 `magnetization_trajectory.png` 與 `magnetization_components.png` 兩個檔案，可檢視模擬結果。
