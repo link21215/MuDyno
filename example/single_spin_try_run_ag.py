@@ -2,6 +2,7 @@ import matplotlib.backends
 import numpy as np
 import matplotlib.pyplot as plt
 import matplotlib
+# Use the non-interactive Agg backend so the script works without a GUI
 matplotlib.use("Agg")
 # from mpl_toolkits.mplot3d import Axes3D
 
@@ -127,7 +128,9 @@ ax.set_xlim([-max_val, max_val])
 ax.set_ylim([-max_val, max_val])
 ax.set_zlim([-max_val, max_val])
 
-plt.show()
+# 將三維軌跡圖存檔
+plt.savefig("magnetization_trajectory.png")
+plt.close(fig)
 
 # 繪製磁化分量隨時間的變化
 plt.figure(figsize=(12, 6))
@@ -139,4 +142,6 @@ plt.ylabel('Magnetization Component')
 plt.title('Magnetization Components over Time')
 plt.legend()
 plt.grid(True)
-plt.show()
+# 儲存磁化分量隨時間變化的圖
+plt.savefig("magnetization_components.png")
+plt.close()
